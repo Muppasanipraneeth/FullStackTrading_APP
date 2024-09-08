@@ -1,7 +1,7 @@
 const OpenAccount=()=>{
     return (<>
-    <div className="mt-4 ml-48">
-        <div className="text-4xl font-medium text-[#424242] ml-48">
+    <div className="mt-28 ml-56">
+        <div className="text-4xl font-medium text-[#424242] ml-60">
             Open a Zerodha Account
         </div>
         <div className=" text-l font-semibold text-[#666] mt-4 ml-32">
