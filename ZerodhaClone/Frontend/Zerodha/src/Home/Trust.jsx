@@ -1,4 +1,4 @@
-import products from "../src/assets/ecosystem.png"
+import products from "../assets/ecosystem.png"
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const Trust=()=>{

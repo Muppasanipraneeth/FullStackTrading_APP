@@ -1,6 +1,6 @@
-import Price1 from "../src/assets/pricing-eq.svg";
-import price2 from "../src/assets/pricing-eq (1).svg";
-import othertrader from "../src/assets/other-trades.svg";
+import Price1 from "../assets/pricing-eq.svg";
+import price2 from "../assets/pricing-eq (1).svg";
+import othertrader from "../assets/other-trades.svg";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const Unbeatable = () => {

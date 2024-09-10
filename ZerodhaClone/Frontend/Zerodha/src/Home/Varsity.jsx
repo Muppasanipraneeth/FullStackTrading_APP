@@ -1,10 +1,10 @@
-import Varsityicon from "../src/assets/index-education.svg"
+import Varsityicon from "../assets/index-education.svg"
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const Varsity=()=>{
     return (<>
     <div className="varsity flex mt-10">
-        <div className="cursor-pointer">
+        <div className="cursor-pointer p-10">
         <img src={Varsityicon} alt="varsity"></img>
         </div>
         <div className="ml-44 mt-10">

@@ -1,4 +1,4 @@
-import Pressl from "../src/assets/press-logos.png"
+import Pressl from "../assets/press-logos.png"
 const PressLogo=()=>{
     return (<>
     <div className="ml-52 mt-20 cursor-pointer">
