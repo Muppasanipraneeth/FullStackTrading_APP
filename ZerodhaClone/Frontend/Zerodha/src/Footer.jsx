@@ -1,14 +1,16 @@
 import logo from "../src/assets/logo.svg";
 import { FaInstagram, FaFacebook, FaLinkedin, FaYoutube, FaWhatsappSquare, FaTelegram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import DetailsFooter from "./Footerde";
 
 const Footer = () => {
   return (
     <>
-      <div className="Footer flex  border shadow-sm mt-8">
+      <div className="Footer   border shadow-sm mt-16 bg-[#fbfbfb]">
+        <div className="flex">
         <div className="mt-4 ml-16">
           <div>
-            <img src={logo} className="w-[100px] h-[30px]" alt="logo" />
+            <img src={logo} className="w-[150px] " alt="logo" />
           </div>
           <div>
             © 2010 - 2024, Zerodha Broking Ltd. All rights reserved.
@@ -29,7 +31,7 @@ const Footer = () => {
         {/* Company Section */}
         <div className="ml-24 mt-4">
           <h1 className="text-xl font-semibold">Company</h1>
-          <ul className="text-xl font-light">
+          <ul className="text-xl text-[#424242] font-light hover:text-blue-500">
             <li>About</li>
             <li>Products</li>
             <li>Pricing</li>
@@ -44,7 +46,7 @@ const Footer = () => {
         {/* Support Section */}
         <div className="ml-32 mt-4">
           <h1 className="text-xl font-semibold">Support</h1>
-          <ul className="text-xl font-light">
+          <ul className="text-xl text-[#424242] font-light hover:text-blue-500">
             <li>Contact Us</li>
             <li>Support Portal</li>
             <li>Z-connect Blog</li>
@@ -60,11 +62,14 @@ const Footer = () => {
         {/* Account Section */}
         <div className="ml-32 mt-4 mr-8">
           <h1 className="text-xl font-semibold">Account</h1>
-          <ul className="text-xl font-light">
+          <ul className="text-xl text-[#424242] font-light hover:text-blue-500">
             <li>Open an Account</li>
             <li>Fund Transfer</li>
           </ul>
         </div>
+        </div>
+        <DetailsFooter />
+
       </div>
     </>
   );

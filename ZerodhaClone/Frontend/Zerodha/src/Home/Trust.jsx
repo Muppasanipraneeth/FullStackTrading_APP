@@ -1,9 +1,9 @@
-import products from "../src/assets/ecosystem.png"
+import products from "../assets/ecosystem.png"
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const Trust=()=>{
     return (<>
-    <div className="trust flex">
+    <div className="trust flex mt-20">
         <div className="ml-28 w-[500px]">
 <div>
 <h1 className="text-4xl m-2">Trust with confidence
@@ -44,10 +44,10 @@ const Trust=()=>{
         </div>
         <div className="flex">
   <div className="m-5 flex">
-    <a href="ww" className="text-blue-600 text-lg hover:text-black flex items-center">
+    <a href="ww" className="text-blue-600 text-xl hover:text-black flex items-center">
       Explore our Products <FaArrowRightLong className="ml-2" />
     </a>
-    <a href="ww" className="text-blue-600 text-lg ml-10 hover:text-black flex items-center">
+    <a href="ww" className="text-blue-600 text-xl ml-10 hover:text-black flex items-center">
       Try Kite Demo <FaArrowRightLong className="ml-2" />
     </a>
   </div>
