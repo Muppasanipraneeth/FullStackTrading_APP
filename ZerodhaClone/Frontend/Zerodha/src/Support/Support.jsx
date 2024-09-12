@@ -1,6 +1,12 @@
-const Support =()=>{
+import Ticket from "./CreateTicket";
+import Hero from "./Hero";
+
+const Support=()=>{
     return (<>
-    <div> Support Page</div>
-    </>)
+    <div>
+        <Ticket />
+        <Hero />
+    </div>
+    </>);
 }
 export default Support;
