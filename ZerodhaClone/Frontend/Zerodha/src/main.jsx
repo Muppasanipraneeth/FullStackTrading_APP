@@ -6,8 +6,8 @@ import Support from './Support/Support.jsx';
 import About from './about/AboutPage.jsx';
 import Product from './Products/Products.jsx';
 import Pricing from './Pricing/Pricing.jsx';
-import SignUp from './Home/SignupLand.jsx';
 import NotFound from './PageNotFound.jsx';
+import SignUp from './SignUp/SignUp.jsx';
 
 const router = createBrowserRouter([
   {
