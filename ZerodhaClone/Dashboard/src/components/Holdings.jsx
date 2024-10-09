@@ -1,7 +1,34 @@
-import { holdings } from "../data/data";
-const Holdings = () => {
-  console.log(holdings);
+import axios from "axios";
+import { useEffect, useState } from "react";
+import { VerticalGraph } from "./VerticalGraph";
 
+const Holdings = () => {
+  const [holdings,setholdoings]=useState([]);
+  useEffect(() => {
+    // Fetch data using async/await
+    const fetchingHold = async () => {
+      try {
+        const response = await axios.get("http://localhost:3000/allHoldings");
+        setholdoings(response?.data); // Set the fetched data
+      } catch (error) {
+        console.error("Error fetching holdings:", error);
+      }
+    };
+
+    fetchingHold();
+  }, []); 
+  const labels = holdings.map((subarray) => subarray["name"]); // Correct the mapping function
+  const data = {
+    labels, // Use 'labels', not 'lables'
+    datasets: [
+      {
+        label: "Stock Name",
+        data: holdings.map((stock) => stock["price"]), // Make sure to return the mapped value
+        backgroundColor: "rgba(255, 99, 132, 0.5)",
+      },
+    ],
+  };
+  
   return (
     
     <>
@@ -65,6 +92,8 @@ const Holdings = () => {
           <p>P&L</p>
         </div>
       </div>
+      <VerticalGraph data={data} />
+
     </>
   );
 };
