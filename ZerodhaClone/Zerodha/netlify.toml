@@ -1,0 +1,10 @@
+[build]
+  base = "Zerodha"           # Ensure this matches your directory structure
+  publish = "Zerodha/dist"   # Change to 'Zerodha/dist' if needed
+  command = "npm run build"   # Command to build the project
+
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
