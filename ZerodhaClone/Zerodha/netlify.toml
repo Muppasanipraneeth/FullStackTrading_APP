@@ -1,7 +1,8 @@
 [build]
-  base = "Zerodha"  # Your frontend folder location
-  publish = "dist"  # Where the build files are stored after running 'npm run build'
-  command = "npm run build"
+  base = "Zerodha"           # Ensure this matches your directory structure
+  publish = "Zerodha/dist"   # Change to 'Zerodha/dist' if needed
+  command = "npm run build"   # Command to build the project
+
 
 [[redirects]]
   from = "/*"
